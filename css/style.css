@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-comforta: 'Comfortaa';
+    --ff-sans: 'Source Code Pro', sans-serif;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --color-bg: #fff;
+    --color-txt: #303030;
+    --color-accent: #16e0bd;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h2: 1.25rem;
+    --fs-body: 1rem;
+}
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h2: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+/*general*/
+
+body {
+    background: var(--clr-bg);
+    color: var(--color-txt);
+    margin: 0;
+    font-family: var(--ff-comforta);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
