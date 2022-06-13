@@ -33,7 +33,7 @@
 /*general*/
 
 body {
-    background: var(--clr-bg);
+    background: var(--color-bg);
     color: var(--color-txt);
     margin: 0;
     font-family: var(--ff-comforta);
@@ -45,6 +45,12 @@ img {
     display: block;
     max-width: 100%;
 }
+
+strong {
+    font-weight: var(--fw-bold);
+}
+
+/* typography */
 
 
 h1,
@@ -58,3 +64,21 @@ h1 { font-size: var(--fs-h1)}
 h2 { font-size: var(--fs-h2)}
 h3 { font-size: var(--fs-h3)}
 
+.section_title {
+
+}
+
+.section_title--intro {
+    font-weight: var(--fw-reg);
+}
+
+.section_subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section_subtitle--intro,
+.section_subtitle--about {
+    background: var(--color-accent);
+    font-family: var(--ff-sans);
+}
