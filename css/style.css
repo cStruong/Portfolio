@@ -57,6 +57,29 @@ strong {
     font-weight: var(--fw-bold);
 }
 
+:focus {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 2.5em;
+    background: var(--color-accent);
+    color: var(--color-txt);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight:  var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
 /* typography */
 
 
@@ -142,5 +165,55 @@ nav {
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
+    }
+}
+
+/* skills section */
+
+.my-skills {
+    background-color: var(--color-txt);
+    background-image: url(../assets/skills_bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    color: var(--color-bg);
+    text-align: center;
+}
+
+.section_title--skills {
+    color: var(--color-accent);
+    position: relative;
+}
+
+.section_title--skills::after{
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: currentColor;
+    opacity: 0.25;
+}
+
+.skills {
+    margin-bottom: 4em;
+}
+
+.skill {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+    .skills {
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .skill + .skill {
+        margin-left: 2em;
     }
 }
