@@ -119,6 +119,12 @@ h3 { font-size: var(--fs-h3)}
     margin-bottom: 0.1em;
 }
 
+.section_subtitle--work {
+    color: var(--color-accent);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
+}
+
 /* header */
 nav {
     display: none;
@@ -259,4 +265,19 @@ nav {
         position: relative;
         z-index: 2;
     }
+}
+
+/* my work */
+
+.my-work {
+    background-color: var(--color-txt);
+    color: var(--color-bg);
+    text-align: center;
+}
+
+.portfolio {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); makes 3 columns */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 0 auto;
 }
