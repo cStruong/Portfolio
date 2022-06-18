@@ -323,6 +323,11 @@ footer a {
     margin: 0 1.5em;
 }
 
+.social-list_link:hover {
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
 .social-list_link {
     padding: .5em;
 }
