@@ -14,7 +14,7 @@
     <body>
         <header>
             <div class="logo">
-                <h1>cStruong</h1>
+                <h2>cStruong</h2>
             </div>
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
@@ -25,7 +25,7 @@
                         <a class="nav_link "href="#home">Home</a>
                     </li>
                     <li class="nav_item">
-                        <a class="nav_link "href="#extra">Extra</a>
+                        <a class="nav_link "href="#skills">Skills</a>
                     </li>
                     <li class="nav_item">
                         <a class="nav_link "href="#aboutme">About Me</a>
@@ -49,18 +49,22 @@
             <h2 class="section_title section_title--skills">Skills</h2>
             <div class="skills">
                 <div class="skill">
-                    <h3>Section1</h3>
+                    <h3>Stack</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
 
                 <div class="skill">
-                    <h3>Section2</h3>
+                    <h3>Cloud</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
 
                 <div class="skill">
-                    <h3>Section3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h3>Certifications</h3>
+                        <ul>
+                            <li>AWS Solutions Architect - Professional</li>
+                            <li>AWS Solutions Architect - Professional</li>
+                            <li>AWS Solutions Architect - Professional</li>
+                        </ul>
                 </div>
             </div>
 
@@ -69,7 +73,7 @@
 
         <!--About me section-->
         <section class="about-me" id="aboutme">
-            <h2 class="section_title section_title--about">Who dis</h2>
+            <h2 class="section_title section_title--about">About me</h2>
             <p class="section_subtitle section_subtitle--about">Dev and Cloud Architect based in NYC</p>
             
             <div class="about-me_body">
@@ -81,25 +85,64 @@
 
         <!--Portfolio/Work-->
         <section class="my-work" id="work">
-            <h2 class="section_title section_title--work">My Work</h2>
-            <p class="section_subtitle section_subtitle--work">Projects</p>
+            <h2 class="section_title section_title--work">My Projects</h2>
 
-            <div class="portfolio">
-                <a href="#" class="portfolio_item">
-                    <img src="./assets/discordbot.png" alt="Discord Bot Project" class="portfolio_img">
-                </a>
+            <div class="mySlides fade">
+                <div class="slide">
+                    <div class="project-img">
+                        <img src="./assets/letsgo.png" alt="Let's Go Project" class="portfolio_img">
+                    </div>
+                    <div class="project-description">
+                        <h2>Let's Go!</h2>
+                        <p>Let's Go! is a Group Trip Budgeting and Planning Application for friends who are want to plan and budget a trip together built using React.js + Redux with a Ruby on Rails backend API and a PostgreSQL database with full CRUD capabilities. Let's Go! is my Capstone Project inspired to solve a problem me and my friends had while planning a group trip. We originally used a spreadsheet to plan a trip but quickly found it to be difficult and tedious. I created Let's Go to be a platform where individuals can plan and budget a trip together.</p>
+                    </div>
+                </div>
+            </div>
 
-                <a href="#" class="portfolio_item">
-                    <img src="./assets/museum.png" alt="Museum Game Project" class="portfolio_img">
-                </a>
+            <div class="mySlides fade">
+                <div class="slide">
+                    <div class="project-img">
+                        <img src="./assets/freethrowtracker.gif" alt="Free Throw Tracker Project" class="portfolio_img">
+                    </div>
+                    <div class="project-description">
+                        <h2>Free Throw Tracker</h2>
+                        <p>Track video of a free throw shot from the side using image recognition via AWS Rekognition service. This application was built using Python as well as several Python libraries such as OpenCV and NumPy. This application will calculate the free throw release angle as well as initial velocity of a free throw shot using image recognition to help track your free throw shooting.</p>
+                    </div>
+                </div>
+            </div>
 
-                <a href="#" class="portfolio_item">
-                    <img src="./assets/letsgo.png" alt="Let's Go Project" class="portfolio_img">
-                </a>
+            <div class="mySlides fade">
+                <div class="slide">
+                    <div class="project-img">
+                        <img src="./assets/discordbot.png" alt="Discord Bot Project" class="portfolio_img">
+                    </div>
+                    <div class="project-description">
+                        <h2>ChrispyBot</h2>
+                        <p>A Discord Utility Bot written in JavaScript using the Discord.js library and Discord Developer tool. ChrispyBot is a bot made by Discord Developer Tools with all its functionalities written in JavaScript using the Discord.js library. It is intended to give utility to all users in a Discord chat channel such as responding to user typed commands that can get the current weather or search for a youtube video or even find a restaurant.</p>
+                    </div>
+                </div>
+            </div> 
 
-                <a href="#" class="portfolio_item">
-                    <img src="./assets/freethrowtracker.gif" alt="Free Throw Tracker Project" class="portfolio_img">
-                </a>
+            <div class="mySlides fade">
+                <div class="slide">
+                    <div class="project-img">
+                        <img src="./assets/museum.png" alt="Museum Game Project" class="portfolio_img">
+                    </div>
+                    <div class="project-description">
+                        <h2>Night at the Museum Game</h2>
+                        <p>Night at the Museum is a browser game that uses the p5.js library. Night at the Museum is our Module 3 paired project during our tenure at the Flatiron School where we were first introduced to Javascript as well as DOM manipulation. Night at the Museum is a browser game that uses the p5.js library (more specifically the p5.play library) to create a canvas on the DOM giving us access to sprite objects and draw functions. Night at the Museum is a game similar to the children's game "Red Light Green Light".</p>
+                    </div>
+                </div>
+            </div> 
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="dots" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
             </div>
         </section>
 
@@ -124,5 +167,6 @@
             </ul>
         </footer>
 
+        <script src="js/index.js"></script>
     </body>
 </html>
