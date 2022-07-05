@@ -307,13 +307,13 @@ header {
     position: relative;
 }
 
-.section_title--skills::after{
+.section_title--skills::after {
     content: '';
     display: block;
     width: 2em;
     height: 1px;
     margin: 0.5em auto 1em;
-    background: currentColor;
+    background: var(--color-bg);
     opacity: 0.25;
 }
 
@@ -322,7 +322,7 @@ header {
 }
 
 .skill {
-    max-width: 33%;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -332,6 +332,10 @@ header {
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .skill {
+        max-width: 33%;
     }
 
     .skill + .skill {
